@@ -8,9 +8,9 @@
 
 :root {
     --cor01: #F22259;
-    --cor02: #5D2E8C;
-    --cor03: #180D40;
-    --cor04: #F29F05;
+    --cor02: #443c4d;
+    --cor03: #13111a;
+    --cor04: #543ca8;
     --cor05: #F27405;
 
     --borda: ;
@@ -28,11 +28,13 @@ body {
 }
 
 .main {
-    background-color: var(--cor03);
-    max-width: 80%;
-    height: 60%;
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
+    max-width: 800px;
+    max-height: 400px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.774);
 }
 
 .esquerda {
@@ -56,39 +58,90 @@ body {
     width: 50%;
     height: 100%;
     padding: 30px;
-    background-color: white;
+    background-color: rgb(201, 201, 201);
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    border-radius: 0 10px 10px 0;
 }
 
 .direita .login {
-    background-image: linear-gradient(45deg, #ff7802, #f7b53a, #ff7802);
-    border: 1px solid black;
-    padding-top: 30%;
+    background-image: linear-gradient(to right, #a09f9f, #6c6c6c);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.692);
     width: 96%;
-    height: 80%;
+    height: 100%;
     position: relative;
+    padding: 10px;
 }
 
+.img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+}
 .login img {
     position: absolute;
-    top: -32%;
-    left: 19%;
-    width: 60%;
+    left: 30%;
+    height: 90%;
 }
+
 .textfield {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 2px;
+}
+
+.textfield label {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+
+.textfield input {
+    align-self: center;
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px black;
+    margin-top: 4px;
+    border-radius: 8px;
+    color: black;
+    padding: 0 6px;
+}
+
+.textfield input:hover, .textfield input:focus {
+    width: 100%;
+    transition: all .2s;
 }
 
 .btn-login {
-    margin-top: 4px;
-    width: 100%;
+    width: 90%;
     height: 32px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, rgb(67, 57, 87), rgb(73, 65, 146));
+    color: white;
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+    box-shadow: 0 1px 3px black;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.btn-login:focus {
+    cursor: pointer;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.644);
+}
+
+.btn-login:hover {
+    width: 100%;
+    margin-left: 0;
+    transition: all .2s;
 }
