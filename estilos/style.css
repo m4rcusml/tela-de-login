@@ -84,8 +84,9 @@ body {
 }
 .login img {
     position: absolute;
-    left: 30%;
+    left: 50%;
     height: 90%;
+    translate: -50%;
 }
 
 .textfield {
