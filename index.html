@@ -8,34 +8,36 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="Logo">
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Contatos</a>
-            <a href="#">Sobre</a>
-        </nav>
-    </header>
 
-    <form>
-        <h1>Login</h1>
+    <div class="main">
+        <div class="esquerda">
+            <h1>Seja bem-vindo(a) ao nosso time!</h1>
+            <img src="" alt="Foto">
+        </div>
+        <div class="direita">
 
-        <fieldset>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" required>
+            <div class="login">
+                <!-- <a href="https://www.flaticon.com/br/icones-gratis/individual" title="individual ícones">Individual ícones criados por Good Ware - Flaticon</a> -->
+                <div class="img">
+                    <img src="imagens/perfil-128.png" alt="Perfil">
+                </div>
+
+                <form action="">
+                    <div class="textfield">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="textfield">
+                        <label>Senha:</label>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                    </div>
+                    <button class="btn-login" type="submit">Login</button>
+                </form>
+                
             </div>
-            <div>
-                <label>Senha:</label>
-                <input type="text" name="senha" required>
-            </div>
-        </fieldset>
+        
+        </div>
+    </div>
 
-        <button type="submit"><img src="imagens/voltar.png" alt="Entrar"><strong>Entrar</strong></button>
-    </form>
-
-    <footer>
-        <p>Site feito por <a href="#">Marcus Felipe</a> para treinar HTML e CSS</p>
-    </footer>
 </body>
 </html>
